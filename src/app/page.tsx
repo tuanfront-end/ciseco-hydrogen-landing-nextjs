@@ -3,23 +3,23 @@ import { Footer } from '@/components/Footer'
 import { FreeChapters } from '@/components/FreeChapters'
 import { Hero } from '@/components/Hero'
 import { Introduction } from '@/components/Introduction'
-import { NavBar } from '@/components/NavBar'
-import { Pricing } from '@/components/Pricing'
-import { Resources } from '@/components/Resources'
-import { Screencasts } from '@/components/Screencasts'
-import { TableOfContents } from '@/components/TableOfContents'
-import { Testimonial } from '@/components/Testimonial'
-import { Testimonials } from '@/components/Testimonials'
-import avatarImage1 from '@/images/avatars/avatar-1.png'
-import avatarImage2 from '@/images/avatars/avatar-2.png'
+// import { NavBar } from '@/components/NavBar'
+// import { Pricing } from '@/components/Pricing'
+// import { Resources } from '@/components/Resources'
+// import { Screencasts } from '@/components/Screencasts'
+// import { TableOfContents } from '@/components/TableOfContents'
+// import { Testimonial } from '@/components/Testimonial'
+// import { Testimonials } from '@/components/Testimonials'
+// import avatarImage1 from '@/images/avatars/avatar-1.png'
+// import avatarImage2 from '@/images/avatars/avatar-2.png'
 
 export default function Home() {
   return (
     <>
       <Hero />
       <Introduction />
-      <NavBar />
-      <TableOfContents />
+      {/* <NavBar /> */}
+      {/* <TableOfContents />
       <Testimonial
         id="testimonial-from-tommy-stroman"
         author={{
@@ -47,10 +47,10 @@ export default function Home() {
           frustrated and gave up. Now I sell my own custom icon sets online.”
         </p>
       </Testimonial>
-      <Resources />
+      <Resources /> */}
       <FreeChapters />
-      <Pricing />
-      <Testimonials />
+      {/* <Pricing /> */}
+      {/* <Testimonials /> */}
       <Author />
       <Footer />
     </>

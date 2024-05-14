@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import clsx from 'clsx'
 
 import '@/styles/tailwind.css'
+import { DATA } from '@/data/data'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -11,9 +12,8 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Everything Starts as a Square - Get lost in the world of icon design',
-  description:
-    'A book and video course that teaches you how to design your own icons from scratch.',
+  title: DATA.title,
+  description: DATA.description,
 }
 
 export default function RootLayout({

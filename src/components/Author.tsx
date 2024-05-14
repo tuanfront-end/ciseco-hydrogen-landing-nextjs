@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
-
 import { GridPattern } from '@/components/GridPattern'
-import { SectionHeading } from '@/components/SectionHeading'
 import authorImage from '@/images/avatars/author.png'
+import { Button } from './Button'
+import { DATA } from '@/data/data'
 
 function XIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -34,22 +34,31 @@ export function Author() {
             />
           </div>
           <div className="px-4 py-10 sm:px-10 sm:py-16 md:py-20 lg:px-20 lg:py-32">
-            <SectionHeading number="5" id="author-title">
-              Author
-            </SectionHeading>
             <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
-              <span className="block text-blue-600">Mira Lindehoff –</span> Hey
-              there, I’m the author behind ‘Everything Starts as a Square’.
+              <span className="block text-blue-600">***</span> Hey there, now
+              you don’t need to read anymore, click preview and enjoy it
             </p>
-            <p className="mt-4 text-lg tracking-tight text-slate-700">
-              I’ve been designing icons professionally for over a decade and
-              have worked with dozens of the biggest brands to create custom
-              sets for their products. I’m an accomplished conference speaker,
-              and have been teaching icon design workshops every month for the
-              last three years. I’ve worked with designers of all skill levels
-              and honed my way of teaching to really click for anyone who has
-              the itch to start designing their own icons.
-            </p>
+            <div className="mt-12  ">
+              <div className="mt-4 flex flex-wrap gap-4">
+                <Button
+                  color="blue"
+                  href={DATA.previewLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live preview demo{` `} &rarr;
+                </Button>
+                <Button
+                  color="blue"
+                  variant="outline"
+                  href={DATA.buyLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Buy now for {DATA.price}
+                </Button>
+              </div>
+            </div>
             <p className="mt-8">
               <Link
                 href="#"

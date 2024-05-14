@@ -1,6 +1,7 @@
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { Pattern } from '@/components/Pattern'
+import { DATA } from '@/data/data'
 
 export function FreeChapters() {
   return (
@@ -17,39 +18,38 @@ export function FreeChapters() {
           <Pattern className="absolute -top-32 left-0 w-full sm:-top-5 sm:left-3/4 sm:ml-8 sm:w-auto md:left-2/3 lg:left-auto lg:right-2 lg:ml-0 xl:left-2/3 xl:right-auto" />
           <div>
             <h2 className="font-display text-5xl font-extrabold tracking-tight text-white sm:w-3/4 sm:text-6xl md:w-2/3 lg:w-auto">
-              Get the free sample chapters
+              Get started today with Ciseco
             </h2>
             <p className="mt-4 text-lg tracking-tight text-blue-200">
-              Enter your email address and I’ll send you a sample from the book
-              containing two of my favorite chapters.
+              It’s time to improve your website. Buy the Ciseco storefront so
+              you can feel like you’re doing something productive.
             </p>
           </div>
-          <form className="lg:pl-16">
+          <div className="lg:pl-16">
             <h3 className="text-base font-medium tracking-tight text-white">
-              Get two free chapters straight to your inbox{' '}
+              Discover the full potential of Ciseco {` `}
               <span aria-hidden="true">&rarr;</span>
             </h3>
-            <div className="mt-4 sm:relative sm:flex sm:items-center sm:py-0.5 sm:pr-2.5">
-              <div className="relative sm:static sm:flex-auto">
-                <input
-                  type="email"
-                  id="email-address"
-                  required
-                  aria-label="Email address"
-                  placeholder="Email address"
-                  className="peer relative z-10 w-full appearance-none bg-transparent px-4 py-2 text-base text-white placeholder:text-white/70 focus:outline-none sm:py-3"
-                />
-                <div className="absolute inset-0 rounded-md border border-white/20 peer-focus:border-blue-300 peer-focus:bg-blue-500 peer-focus:ring-1 peer-focus:ring-blue-300 sm:rounded-xl" />
-              </div>
+            <div className="mt-4 flex flex-wrap gap-4">
               <Button
-                type="submit"
                 color="white"
-                className="mt-4 w-full sm:relative sm:z-10 sm:mt-0 sm:w-auto sm:flex-none"
+                href={DATA.previewLink}
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Get free chapters
+                Live preview demo
+              </Button>
+              <Button
+                color="slate"
+                variant="solid"
+                href={DATA.buyLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Buy now for {DATA.price}
               </Button>
             </div>
-          </form>
+          </div>
         </Container>
       </div>
     </section>
