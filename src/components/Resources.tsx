@@ -25,7 +25,6 @@ const resources = [
             fill
             alt=""
             className="object-cover object-top"
-            unoptimized
           />
         </div>
       )
@@ -43,7 +42,6 @@ const resources = [
             src={marketsImage}
             alt=""
             fill
-            unoptimized
           />
         </div>
       )
@@ -61,7 +59,6 @@ const resources = [
             fill
             className="object-cover object-left-top"
             alt=""
-            unoptimized
           />
         </div>
       )
@@ -79,7 +76,6 @@ const resources = [
             fill
             alt=""
             className="object-cover object-left-top"
-            unoptimized
           />
         </div>
       )
@@ -97,7 +93,6 @@ const resources = [
             fill
             alt=""
             className="object-cover object-left-top"
-            unoptimized
           />
         </div>
       )
@@ -110,7 +105,7 @@ const resources = [
     image: function DiscordImage() {
       return (
         <div className="absolute inset-0 flex items-center justify-center bg-[#6366F1]">
-          <Image src={figmaImage} alt="" unoptimized />
+          <Image src={figmaImage} alt="" />
         </div>
       )
     },
@@ -127,7 +122,6 @@ const resources = [
             alt=""
             fill
             className="object-contain object-top"
-            unoptimized
           />
         </div>
       )
@@ -145,7 +139,6 @@ const resources = [
             alt=""
             className="object-cover object-top"
             fill
-            unoptimized
           />
         </div>
       )
@@ -163,7 +156,6 @@ const resources = [
             alt=""
             className="object-cover object-bottom"
             fill
-            unoptimized
           />
         </div>
       )
