@@ -14,8 +14,27 @@ function Testimonial() {
       </div>
       <blockquote className="mt-2">
         <p className="font-display text-xl font-medium text-slate-900">
-          “Headless in half the time” <br /> Shopify’s headless stack that’s
-          engineered for performance and productivity.
+          {`Hydrogen and Oxygen make up Shopify's recommended stack for headless commerce`}
+          <a
+            href="https://shopify.dev/docs/custom-storefronts/hydrogen/fundamentals"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="ml-1.5 inline-block h-5 w-5 text-blue-600"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+              />
+            </svg>
+          </a>
         </p>
       </blockquote>
     </figure>
@@ -35,7 +54,13 @@ export function Hero() {
             />
           </div>
           <div className="relative z-10 mx-auto flex w-64 rounded-xl bg-slate-600 shadow-xl md:w-80 lg:w-auto">
-            <Image className="w-full" src={coverImage} alt="" priority />
+            <a
+              href={DATA.previewLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image className="w-full" src={coverImage} alt="" priority />
+            </a>
           </div>
         </div>
         <div className="relative px-4 sm:px-6 lg:col-span-7 lg:pb-14 lg:pl-16 lg:pr-0 xl:pl-20">
@@ -48,8 +73,9 @@ export function Hero() {
               {`Ciseco - Hydrogen Shopify's Headless Storefront`}
             </h1>
             <p className="mt-4 text-3xl text-slate-600">
-              Ciseco Hydrogen is built on Remix, the framework from the creators
-              of React Router.
+              Ciseco will provide users with a beautifully designed storefront,
+              fast loading speeds with SSR, and all the features of an online
+              store.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Button

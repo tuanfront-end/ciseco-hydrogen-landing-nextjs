@@ -7,28 +7,29 @@ import {
 import { SectionHeading } from '@/components/SectionHeading'
 
 const tableOfContents = {
-  'Getting started': {
-    'Getting started': 1,
-    'Intro to Figma': 15,
-    'Setting up your first artboard': 20,
+  Cart: {
+    'Leverage a feature-rich, server-side, edge rendered cart that effortlessly handles discounts, metafields, and everything critical to convert.': 1,
   },
-  Fundamentals: {
-    'Strokes and fills': 21,
-    'End points': 22,
-    'Bezier curves': 26,
-    'Designing on a grid': 31,
-    'Vector shapes': 45,
+  Markets: {
+    'Effortlessly sell to multiple countries and scale internationally, all from a single Shopify store, without changing a line of code.': 21,
   },
-  'Boolean operations': {
-    'Combining shapes': 50,
-    'Subtracting shapes': 57,
-    'Intersecting shapes': 66,
-    Flattening: 78,
+  Analytics: {
+    'Explore how your customers shop your storefront with built-in support for Shopify analytics tracking, dashboards, and Live View.': 50,
   },
-  'Optimizing for production': {
-    'Preparing for SVG': 82,
-    'Configuring your export settings': 88,
-    'Minifying and removing metadata': 95,
+  'Search and Discovery': {
+    'Enhance your store with search, predictive search, and personalized product recommendations.': 82,
+  },
+  Metaobjects: {
+    'Easily render custom content models on your site for a tailored user experience.': 82,
+  },
+  Pixels: {
+    'Improve performance and attribution with Web Pixels, including server-side syncing to all your marketing channels.': 82,
+  },
+  'Customer Accounts': {
+    'Add authentication and account management effortlessly, and enable a seamless user experience with passwordless logins.': 82,
+  },
+  'Discount Links': {
+    'Simplify marketing campaigns with discount links that automatically apply promotions, streamlining the customer journey.': 82,
   },
 }
 
@@ -44,8 +45,8 @@ export function TableOfContents() {
           Table of contents
         </SectionHeading>
         <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
-          Get a look at all of the content covered in the book. Everything you
-          need to know is inside.
+          Accelerate development with built-in Shopify features critical to
+          conversion
         </p>
         <p className="mt-4 text-lg tracking-tight text-slate-700">
           “Everything Starts as a Square” is comprised of 240 tightly edited,
