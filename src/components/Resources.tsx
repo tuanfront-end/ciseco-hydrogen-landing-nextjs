@@ -23,7 +23,8 @@ const resources = [
           <Image
             src={cartImage}
             fill
-            alt=""
+            sizes="(min-width: 640px) 40vw, 100vw"
+            alt="Shopping Cart"
             className="object-cover object-top"
           />
         </div>
@@ -40,7 +41,8 @@ const resources = [
           <Image
             className="object-cover object-left-top"
             src={marketsImage}
-            alt=""
+            alt="Markets"
+            sizes="(min-width: 640px) 40vw, 100vw"
             fill
           />
         </div>
@@ -58,7 +60,8 @@ const resources = [
             src={analyticsImage}
             fill
             className="object-cover object-left-top"
-            alt=""
+            alt="Analytics & Seo"
+            sizes="(min-width: 640px) 40vw, 100vw"
           />
         </div>
       )
@@ -74,7 +77,8 @@ const resources = [
           <Image
             src={searchImage}
             fill
-            alt=""
+            alt="Search and Discovery"
+            sizes="(min-width: 640px) 40vw, 100vw"
             className="object-cover object-left-top"
           />
         </div>
@@ -91,8 +95,9 @@ const resources = [
           <Image
             src={definitionsImage}
             fill
-            alt=""
+            alt="Metaobjects CMS"
             className="object-cover object-left-top"
+            sizes="(min-width: 640px) 40vw, 100vw"
           />
         </div>
       )
@@ -119,9 +124,10 @@ const resources = [
         <div className="absolute inset-0 flex items-center justify-center ">
           <Image
             src={accountImage}
-            alt=""
+            alt="Customer Accounts"
             fill
             className="object-contain object-top"
+            sizes="(min-width: 640px) 40vw, 100vw"
           />
         </div>
       )
@@ -136,8 +142,9 @@ const resources = [
         <div className="absolute inset-0 flex items-center justify-center ">
           <Image
             src={checkoutImage}
-            alt=""
+            alt="Checkout and Discounts"
             className="object-cover object-top"
+            sizes="(min-width: 640px) 40vw, 100vw"
             fill
           />
         </div>
@@ -153,8 +160,9 @@ const resources = [
         <div className="absolute inset-0 flex items-center justify-center ">
           <Image
             src={ociImage}
-            alt=""
+            alt="One click import"
             className="object-cover object-bottom"
+            sizes="(min-width: 640px) 40vw, 100vw"
             fill
           />
         </div>
