@@ -15,7 +15,7 @@ export default function Home() {
       <Introduction />
       {/* <NavBar />
       <TableOfContents /> */}
-      <Testimonial
+      {/* <Testimonial
         id="testimonial-from-gerardo-stark"
         author={{
           name: 'Jenna Smith',
@@ -26,10 +26,10 @@ export default function Home() {
         <p>
           {` “Ciseco is lightning fast, great UI, smart filter, CMS easy with Shopify’s metaobject, and more 🤤.”`}
         </p>
-      </Testimonial>
-      <Screencasts />
+      </Testimonial> */}
       <FreeChapters />
-      <Resources />
+      <Screencasts />
+      {/* <Resources /> */}
       {/* <Pricing /> */}
       {/* <Testimonials /> */}
       <Author />
