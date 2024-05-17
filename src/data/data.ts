@@ -1,4 +1,8 @@
 export const DATA = {
+  documentationLink:
+    'https://nghiaxchis.gitbook.io/ciseco-hydrogen-shopifys-headless-theme',
+  changeLogLink:
+    'https://nghiaxchis.gitbook.io/ciseco-hydrogen-shopifys-headless-theme/change-log/change-log',
   previewLink:
     'https://ciseco-hydrogen-vite-56385ad898867bbff28c.o2.myshopify.dev/',
   buyLink:

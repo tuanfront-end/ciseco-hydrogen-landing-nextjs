@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { GridPattern } from '@/components/GridPattern'
 import authorImage from '@/images/avatars/author.png'
+import Built_with_Hydrogen_sticker from '@/images/screencasts/Built_with_Hydrogen_sticker.webp'
 import { Button } from './Button'
 import { DATA } from '@/data/data'
 
@@ -35,8 +36,8 @@ export function Author() {
           </div>
           <div className="px-4 py-10 sm:px-10 sm:py-16 md:py-20 lg:px-20 lg:py-32">
             <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
-              <span className="block text-blue-600">***</span> Hey there, now
-              you don’t need to read anymore, click preview and enjoy it
+              <span className="block text-blue-600">***</span>{' '}
+              {`That's probably enough for now. What are you waiting for?`}
             </p>
             <div className="mt-12  ">
               <div className="mt-4 flex flex-wrap gap-4">

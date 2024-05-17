@@ -1,41 +1,65 @@
 import Image from 'next/image'
-
 import { Container } from '@/components/Container'
 import { SectionHeading } from '@/components/SectionHeading'
-import abstractBackgroundImage from '@/images/resources/abstract-background.png'
-import discordImage from '@/images/resources/discord.svg'
 import figmaImage from '@/images/resources/figma.svg'
-import videoPlayerImage from '@/images/resources/video-player.svg'
+import cartImage from '@/images/resources/cart.png'
+import checkoutImage from '@/images/resources/checkout.png'
+import marketsImage from '@/images/resources/markets.png'
+import analyticsImage from '@/images/resources/Analytics.png'
+import searchImage from '@/images/resources/search.png'
+import definitionsImage from '@/images/resources/metaiobject.png'
+import accountImage from '@/images/resources/account.png'
+import ociImage from '@/images/resources/oci.png'
+import { DATA } from '@/data/data'
 
 const resources = [
   {
-    title: 'Figma icon templates',
+    title: 'Shopping Cart',
     description:
-      'Pefectly structured templates for quickly designing new icons at dozens of common sizes.',
+      'Leverage a feature-rich, server-side, edge rendered cart that effortlessly handles discounts, metafields, and everything critical to convert.',
     image: function FigmaImage() {
       return (
-        <div className="absolute inset-0 flex items-center justify-center bg-[radial-gradient(#2C313D_35%,#000)]">
-          <Image src={figmaImage} alt="" unoptimized />
+        <div className="absolute inset-0 flex items-center justify-center ">
+          <Image
+            src={cartImage}
+            fill
+            alt=""
+            className="object-cover object-top"
+            unoptimized
+          />
         </div>
       )
     },
   },
   {
-    title: 'Weekly icon teardowns',
+    title: 'Markets',
     description:
-      'Weekly videos where we dissect and recreate beautiful icons we find on the web.',
+      'Effortlessly sell to multiple countries and scale internationally, all from a single Shopify store, without changing a line of code.',
     image: function VideoPlayerImage() {
       return (
         <div className="absolute inset-0 flex items-center justify-center">
           <Image
-            className="absolute inset-0 h-full w-full object-cover"
-            src={abstractBackgroundImage}
+            className="object-cover object-left-top"
+            src={marketsImage}
             alt=""
-            sizes="(min-width: 1280px) 21rem, (min-width: 1024px) 33vw, (min-width: 768px) 19rem, (min-width: 640px) 50vw, 100vw"
+            fill
+            unoptimized
           />
+        </div>
+      )
+    },
+  },
+  {
+    title: 'Analytics & Seo',
+    description:
+      'Discover how customers shop at your store with built-in support for Shopify analytics and great SEO architecture.',
+    image: function DiscordImage() {
+      return (
+        <div className="absolute inset-0 flex items-center justify-center bg-[#6366F1]">
           <Image
-            className="relative"
-            src={videoPlayerImage}
+            src={analyticsImage}
+            fill
+            className="object-cover object-left-top"
             alt=""
             unoptimized
           />
@@ -44,13 +68,103 @@ const resources = [
     },
   },
   {
-    title: 'Community of icon designers',
+    title: 'Search and Discovery',
     description:
-      "A private Discord server where you can get help and give feedback on each others' work.",
+      'Enhance your store with search, predictive search, and personalized product recommendations.',
     image: function DiscordImage() {
       return (
         <div className="absolute inset-0 flex items-center justify-center bg-[#6366F1]">
-          <Image src={discordImage} alt="" unoptimized />
+          <Image
+            src={searchImage}
+            fill
+            alt=""
+            className="object-cover object-left-top"
+            unoptimized
+          />
+        </div>
+      )
+    },
+  },
+  {
+    title: 'Metaobjects CMS',
+    description:
+      'Easily manage the content of sections of pages using Metaobject entries.',
+    image: function DiscordImage() {
+      return (
+        <div className="absolute inset-0 flex items-center justify-center bg-[#6366F1]">
+          <Image
+            src={definitionsImage}
+            fill
+            alt=""
+            className="object-cover object-left-top"
+            unoptimized
+          />
+        </div>
+      )
+    },
+  },
+  {
+    title: 'Pixels',
+    description:
+      'Improve performance and attribution with Web Pixels, including server-side syncing to all your marketing channels.',
+    image: function DiscordImage() {
+      return (
+        <div className="absolute inset-0 flex items-center justify-center bg-[#6366F1]">
+          <Image src={figmaImage} alt="" unoptimized />
+        </div>
+      )
+    },
+  },
+  {
+    title: 'Customer Accounts',
+    description:
+      'Add authentication and account management effortlessly, and enable a seamless user experience with passwordless logins.',
+    image: function DiscordImage() {
+      return (
+        <div className="absolute inset-0 flex items-center justify-center ">
+          <Image
+            src={accountImage}
+            alt=""
+            fill
+            className="object-contain object-top"
+            unoptimized
+          />
+        </div>
+      )
+    },
+  },
+  {
+    title: 'Checkout and Discounts',
+    description:
+      'Simplify marketing campaigns with discount links that automatically apply promotions, streamlining the customer journey.',
+    image: function DiscordImage() {
+      return (
+        <div className="absolute inset-0 flex items-center justify-center ">
+          <Image
+            src={checkoutImage}
+            alt=""
+            className="object-cover object-top"
+            fill
+            unoptimized
+          />
+        </div>
+      )
+    },
+  },
+  {
+    title: 'One click import',
+    description:
+      'Import the demo Definitions and demo entries with one click and get a ready website just like a demo.',
+    image: function DiscordImage() {
+      return (
+        <div className="absolute inset-0 flex items-center justify-center ">
+          <Image
+            src={ociImage}
+            alt=""
+            className="object-cover object-bottom"
+            fill
+            unoptimized
+          />
         </div>
       )
     },
@@ -65,17 +179,16 @@ export function Resources() {
       className="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32"
     >
       <Container>
-        <SectionHeading number="3" id="resources-title">
-          Resources
+        <SectionHeading number="2" id="resources-title">
+          Features
         </SectionHeading>
         <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
-          Tools and resources you can use to get started even faster and
-          progress even further.
+          Ciseco - Hydrogen Shopify’s Headless, which provides users with a fast
+          and reliable storefront.
         </p>
         <p className="mt-4 text-lg tracking-tight text-slate-700">
-          Design assets, icon teardowns, and a community of fellow icon
-          designers where you can ask questions, get feedback, and accelerate
-          your learning.
+          Our team crafts themes that transcend beauty and functionality,
+          delivering unrivaled page speed and a genuine mobile-first approach
         </p>
       </Container>
       <Container size="lg" className="mt-16">
@@ -88,9 +201,14 @@ export function Resources() {
               key={resource.title}
               className="grid auto-rows-min grid-cols-1 items-center gap-8 px-3 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-1 xl:px-12"
             >
-              <div className="relative h-48 overflow-hidden rounded-2xl shadow-lg sm:h-60 lg:h-40">
+              <a
+                href={DATA.previewLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative h-48 overflow-hidden rounded-2xl shadow-lg sm:h-60"
+              >
                 <resource.image />
-              </div>
+              </a>
               <div>
                 <h3 className="text-base font-medium tracking-tight text-slate-900">
                   {resource.title}
