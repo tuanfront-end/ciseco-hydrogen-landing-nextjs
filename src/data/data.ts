@@ -7,7 +7,7 @@ export const DATA = {
     'https://ciseco-hydrogen-vite-56385ad898867bbff28c.o2.myshopify.dev',
   buyLink:
     'https://themeforest.net/item/ciseco-hydrogen-shopifys-headless-storefront-template/52088296',
-  price: '$44',
+  price: '$49',
   title: "Ciseco - Hydrogen Shopify's Headless Storefront",
   description:
     'Ciseco – Hydrogen Shopify’s Headless Storefront template is a project built on Shopify’s Hydrogen and Remix. It will provide users with a beautifully designed storefront, fast loading speeds with SSR, and all the features of an online store.',
