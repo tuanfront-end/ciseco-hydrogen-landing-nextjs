@@ -3,8 +3,7 @@ export const DATA = {
     'https://nghiaxchis.gitbook.io/ciseco-hydrogen-shopifys-headless-theme',
   changeLogLink:
     'https://nghiaxchis.gitbook.io/ciseco-hydrogen-shopifys-headless-theme/change-log/change-log',
-  previewLink:
-    'https://ciseco-hydrogen-vite-56385ad898867bbff28c.o2.myshopify.dev',
+  previewLink: 'https://ciseco-h2.chisnghiax.com',
   buyLink:
     'https://themeforest.net/item/ciseco-hydrogen-shopifys-headless-storefront-template/52088296',
   price: '$49',
