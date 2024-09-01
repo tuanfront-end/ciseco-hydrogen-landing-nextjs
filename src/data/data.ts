@@ -9,11 +9,11 @@ export const DATA = {
   price: '$49',
   title: "Ciseco - Hydrogen Shopify's Headless Storefront",
   description:
-    'Ciseco – Hydrogen Shopify’s Headless Storefront template is a project built on Shopify’s Hydrogen and Remix. It will provide users with a beautifully designed storefront, fast loading speeds with SSR, and all the features of an online store.',
+    'Ciseco – Hydrogen Shopify’s Headless Storefront theme is a project built on Shopify’s Hydrogen framework. It will provide users with a beautifully designed storefront, fast loading speeds with SSR, and all the features of an online store.',
   features: [
     'Excellent SEO',
-    'Fast page loading speeds with Remix framework',
     'CMS based on Shopify’s Metaobject',
+    'Fast page loading speeds with Remix framework',
     'Beautiful and modern design',
     'Quick demo data import with just a few clicks',
     'Online payments with Shopify’s checkout page',
@@ -26,5 +26,7 @@ export const DATA = {
     'Tailwindcss v3.x',
     'Typescript',
     'HeadlessUI components',
+    'Remix Framework',
+    "Shopify' Hydrogen framework",
   ],
 }

@@ -70,12 +70,12 @@ export function Hero() {
         <div className="bg-white pt-16 lg:col-span-7 lg:bg-transparent lg:pl-16 lg:pt-0 xl:pl-20">
           <div className="mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4 lg:px-0">
             <h1 className="font-display text-5xl font-extrabold text-slate-900 sm:text-6xl">
-              {`Ciseco - Hydrogen Shopify's Headless Storefront`}
+              {`Ciseco - Hydrogen Shopify's Headless Storefront theme`}
             </h1>
             <p className="mt-4 text-3xl text-slate-600">
               Ciseco will provide users with a beautifully designed storefront,
               fast loading speeds with SSR, and all the features of an online
-              store.
+              store - a successful headless ecommerce store.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Button
