@@ -3,10 +3,7 @@ import { Footer } from '@/components/Footer'
 import { FreeChapters } from '@/components/FreeChapters'
 import { Hero } from '@/components/Hero'
 import { Introduction } from '@/components/Introduction'
-import { Resources } from '@/components/Resources'
 import { Screencasts } from '@/components/Screencasts'
-import { Testimonial } from '@/components/Testimonial'
-import avatarImage2 from '@/images/avatars/avatar-2.jpeg'
 
 export default function Home() {
   return (

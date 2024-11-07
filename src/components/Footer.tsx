@@ -8,7 +8,7 @@ export function Footer() {
       </div>
       <div className="relative text-center text-sm text-slate-600">
         <p>
-          Copyright &copy; {new Date().getFullYear()} ChisNghiax Design, LLC
+          Copyright &copy; {new Date().getFullYear()} BooliiTheme Design, LLC
         </p>
         <p>All rights reserved.</p>
       </div>
