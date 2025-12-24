@@ -3,9 +3,9 @@ import clsx from 'clsx'
 
 const baseStyles = {
   solid:
-    'inline-flex justify-center rounded-lg py-2 px-6 text-base font-semibold tracking-tight shadow-sm focus:outline-none',
+    'inline-flex justify-center rounded-lg py-2 px-6 text-base font-semibold tracking-tight shadow-sm focus:outline-hidden',
   outline:
-    'inline-flex items-center justify-center rounded-lg border py-2 px-6 text-base font-semibold tracking-tight focus:outline-none',
+    'inline-flex items-center justify-center rounded-lg border py-2 px-6 text-base font-semibold tracking-tight focus:outline-hidden',
 }
 
 const variantStyles = {
@@ -49,7 +49,7 @@ export function Button({
 
   className = clsx(
     baseStyles[props.variant],
-    props.variant === 'outline'
+    props.variant === 'outline-solid'
       ? variantStyles.outline[props.color]
       : props.variant === 'solid'
         ? variantStyles.solid[props.color]

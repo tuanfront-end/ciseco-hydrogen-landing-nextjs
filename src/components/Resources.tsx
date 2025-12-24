@@ -39,7 +39,7 @@ const resources = [
       return (
         <div className="absolute inset-0 flex items-center justify-center">
           <Image
-            className="object-cover object-left-top"
+            className="object-cover object-top-left"
             src={marketsImage}
             alt="Markets"
             sizes="(min-width: 640px) 40vw, 100vw"
@@ -59,7 +59,7 @@ const resources = [
           <Image
             src={analyticsImage}
             fill
-            className="object-cover object-left-top"
+            className="object-cover object-top-left"
             alt="Analytics & Seo"
             sizes="(min-width: 640px) 40vw, 100vw"
           />
@@ -79,7 +79,7 @@ const resources = [
             fill
             alt="Search and Discovery"
             sizes="(min-width: 640px) 40vw, 100vw"
-            className="object-cover object-left-top"
+            className="object-cover object-top-left"
           />
         </div>
       )
@@ -96,7 +96,7 @@ const resources = [
             src={definitionsImage}
             fill
             alt="Metaobjects CMS"
-            className="object-cover object-left-top"
+            className="object-cover object-top-left"
             sizes="(min-width: 640px) 40vw, 100vw"
           />
         </div>

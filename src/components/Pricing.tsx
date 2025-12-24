@@ -29,7 +29,7 @@ function Plan({
       )}
     >
       {featured && (
-        <div className="absolute inset-0 text-white/10 [mask-image:linear-gradient(white,transparent)]">
+        <div className="absolute inset-0 text-white/10 mask-[linear-gradient(white,transparent)]">
           <GridPattern x="50%" y="50%" />
         </div>
       )}

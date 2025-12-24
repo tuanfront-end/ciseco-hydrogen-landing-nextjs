@@ -172,7 +172,7 @@ export function Testimonials() {
           {testimonials.map((column, columnIndex) => (
             <li
               key={columnIndex}
-              className="hidden group-data-[expanded]:list-item lg:list-item"
+              className="hidden group-data-expanded:list-item lg:list-item"
             >
               <ul role="list">
                 <ExpandableItems>
